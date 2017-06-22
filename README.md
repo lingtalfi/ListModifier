@@ -357,6 +357,10 @@ This implies that they use a form (but that's another topic).
 History Log
 ------------------    
     
+- 1.1.0 -- 2017-06-22
+
+    - add ListModifierUtil.getCircleValues $defaultValues optional argument
+    
 - 1.0.0 -- 2017-06-22
 
     - initial commit

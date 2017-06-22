@@ -31,7 +31,7 @@ class ListModifierUtil
     }
 
 
-    public static function getCircleValues(ListModifierCircle $circle)
+    public static function getCircleValues(ListModifierCircle $circle, array $defaultValues = [])
     {
         $pool = $_GET;
         $ret = [];
@@ -40,6 +40,8 @@ class ListModifierUtil
             $value = "";
             if (array_key_exists($name, $pool)) {
                 $value = $pool[$name];
+            } elseif (array_key_exists($name, $defaultValues)) {
+                $value = $defaultValues[$name];
             }
             $ret[$name] = $value;
         }
