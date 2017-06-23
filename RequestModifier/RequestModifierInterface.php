@@ -9,7 +9,27 @@ interface RequestModifierInterface
 
     public function addSortItem($column, $dir);
 
-    public function addSearchItem($operator, $value);
+    /**
+     * @param $field
+     * @param $operand
+     * @param string $operator
+     *
+     * Available operators are:
+     * - <         (match if value < operand)
+     * - <=
+     * - >
+     * - >=
+     * - between    (this is the only operator which requires the two operands)
+     * - =          (strict match)
+     * - !=
+     * - like
+     * - %like     (matches only if the value of the column starts with the operand provided with this operator)
+     * - like%     (matches only if the value of the column ends with the operand provided with this operator)
+     *
+     * @return mixed
+     *
+     */
+    public function addSearchItem($field, $operand, $operator = "=");
 
 
     /**
@@ -18,7 +38,7 @@ interface RequestModifierInterface
     public function getSortItems();
 
     /**
-     * @return array of todo...
+     * @return array of field => [operand, operator]
      */
     public function getSearchItems();
 
