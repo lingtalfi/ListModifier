@@ -26,7 +26,14 @@ class ListModifierUtil
 
             if (array_key_exists($name, $pool)) {
                 $value = $pool[$name];
-                $s .= '<input type="hidden" name="' . $name . '" value="' . htmlspecialchars($value) . '">';
+                if (is_array($value)) {
+                    foreach ($value as $val) {
+                        $s .= '<input type="hidden" name="' . $name . '[]" value="' . htmlspecialchars($val) . '">';
+                    }
+                } else {
+
+                    $s .= '<input type="hidden" name="' . $name . '" value="' . htmlspecialchars($value) . '">';
+                }
             }
         }
         return $s;
