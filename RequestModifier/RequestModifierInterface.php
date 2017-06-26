@@ -29,7 +29,7 @@ interface RequestModifierInterface
      * @return mixed
      *
      */
-    public function addSearchItem($field, $operand, $operator = "=");
+    public function addSearchItem($field, $operand, $operator = "=", $operand2 = null);
 
 
     /**
