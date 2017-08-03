@@ -357,6 +357,10 @@ This implies that they use a form (but that's another topic).
 History Log
 ------------------    
     
+- 1.3.0 -- 2017-08-03
+
+    - add RequestModifierInterface setLimit and getLimit methods
+    
 - 1.2.0 -- 2017-06-26
 
     - ListModifierUtil.toFormFields now accept values of type array

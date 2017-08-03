@@ -42,4 +42,14 @@ interface RequestModifierInterface
      */
     public function getSearchItems();
 
+
+    public function setLimit($offset, $nbItems);
+
+    /**
+     * @return array
+     *      - 0: offset
+     *      - 1: nbItems
+     */
+    public function getLimit();
+
 }

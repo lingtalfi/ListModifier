@@ -9,12 +9,14 @@ class RequestModifier implements RequestModifierInterface
 
     private $sortItems;
     private $searchItems;
+    private $limit;
 
 
     public function __construct()
     {
         $this->sortItems = [];
         $this->searchItems = [];
+        $this->limit = [];
     }
 
     public function addSortItem($column, $dir)
@@ -38,6 +40,19 @@ class RequestModifier implements RequestModifierInterface
     {
         return $this->searchItems;
     }
+
+    public function setLimit($offset, $nbItems)
+    {
+        $this->limit = [$offset, $nbItems];
+        return $this;
+    }
+
+    public function getLimit()
+    {
+        return $this->limit;
+    }
+
+
 }
 
 
