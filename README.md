@@ -358,7 +358,7 @@ History Log
 ------------------    
     
 
-- 1.2.0 -- 2017-08-4
+- 1.2.0 -- 2017-08-04
 
     - add ListModifierCircle.clean method
 
