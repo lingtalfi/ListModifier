@@ -42,4 +42,14 @@ interface RequestModifierInterface
      */
     public function getSearchItems();
 
+
+    /**
+     * @return array
+     *      - 0: offset
+     *      - 1: length
+     */
+    public function getLimit();
+
 }
+
+

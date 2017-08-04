@@ -358,6 +358,11 @@ History Log
 ------------------    
     
 
+- 1.3.0 -- 2017-08-04
+
+    - fix ListModifierCircle.clean method
+    - add RequestModifierInterface.getLimit method
+    
 - 1.2.0 -- 2017-08-04
 
     - add ListModifierCircle.clean method

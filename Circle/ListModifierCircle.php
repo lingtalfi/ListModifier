@@ -66,9 +66,14 @@ class ListModifierCircle
         return array_keys($this->listModifiers);
     }
 
-    public function clean(){}
+    public function clean()
+    {
+        $this->listModifiers = [];
+    }
 
-    function __toString()
+
+
+    public function __toString()
     {
         $s = '';
         $keys = array_keys($this->listModifiers);
