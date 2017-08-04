@@ -66,6 +66,12 @@ class ListModifierCircle
         return array_keys($this->listModifiers);
     }
 
+    public function clean()
+    {
+        $this->listModifiers = [];
+        return $this;
+    }
+
     function __toString()
     {
         $s = '';
@@ -79,6 +85,9 @@ class ListModifierCircle
             $value = "";
             if (array_key_exists($name, $_GET)) {
                 $value = $_GET[$name];
+                if (is_array($value)) {
+                    $value = implode('_', $value);
+                }
             }
             $s .= $name . "." . $value;
         }

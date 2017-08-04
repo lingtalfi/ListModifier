@@ -357,9 +357,24 @@ This implies that they use a form (but that's another topic).
 History Log
 ------------------    
     
+
+- 1.2.0 -- 2017-08-4
+
+    - add ListModifierCircle.clean method
+
 - 1.1.0 -- 2017-06-22
 
     - add ListModifierUtil.getCircleValues $defaultValues optional argument
+
+- 1.2.0 -- 2017-06-26
+
+    - ListModifierUtil.toFormFields now accept values of type array
+    
+- 1.1.0 -- 2017-06-26
+
+    - ListModifierCircle.__toString now accept values of type array
+    - RequestModifierInterface.addSearchItem add $operand2 parameter
+
     
 - 1.0.0 -- 2017-06-22
 

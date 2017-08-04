@@ -23,9 +23,9 @@ class RequestModifier implements RequestModifierInterface
         return $this;
     }
 
-    public function addSearchItem($field, $operand, $operator = "=")
+    public function addSearchItem($field, $operand, $operator = "=", $operand2 = null)
     {
-        $this->searchItems[$field] = [$operand, $operator];
+        $this->searchItems[$field] = [$operand, $operator, $operand2];
         return $this;
     }
 
