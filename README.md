@@ -15,7 +15,7 @@ Install
 ==========
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
-uni import ListModifier
+uni import Ling/ListModifier
 ```
 
 Or just download it and place it where you want otherwise.

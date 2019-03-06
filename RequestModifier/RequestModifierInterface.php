@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ListModifier\RequestModifier;
+namespace Ling\ListModifier\RequestModifier;
 
 
 interface RequestModifierInterface

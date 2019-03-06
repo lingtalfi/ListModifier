@@ -1,11 +1,11 @@
 <?php
 
 
-namespace ListModifier\Circle;
+namespace Ling\ListModifier\Circle;
 
 
-use ListModifier\RequestModifier\RequestModifier;
-use ListModifier\RequestModifier\RequestModifierInterface;
+use Ling\ListModifier\RequestModifier\RequestModifier;
+use Ling\ListModifier\RequestModifier\RequestModifierInterface;
 
 class ListModifierCircle
 {

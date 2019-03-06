@@ -1,10 +1,10 @@
 <?php
 
 
-namespace ListModifier\Util;
+namespace Ling\ListModifier\Util;
 
 
-use ListModifier\Circle\ListModifierCircle;
+use Ling\ListModifier\Circle\ListModifierCircle;
 
 class ListModifierUtil
 {

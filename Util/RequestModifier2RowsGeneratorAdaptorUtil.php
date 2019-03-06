@@ -1,11 +1,11 @@
 <?php
 
 
-namespace ListModifier\Util;
+namespace Ling\ListModifier\Util;
 
 
-use ListModifier\Circle\ListModifierCircle;
-use RowsGenerator\RowsGeneratorInterface;
+use Ling\ListModifier\Circle\ListModifierCircle;
+use Ling\RowsGenerator\RowsGeneratorInterface;
 
 class RequestModifier2RowsGeneratorAdaptorUtil
 {
