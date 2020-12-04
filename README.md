@@ -358,6 +358,10 @@ History Log
 ------------------    
     
 
+- 1.3.1 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.3.0 -- 2017-08-04
 
     - fix ListModifierCircle.clean method
